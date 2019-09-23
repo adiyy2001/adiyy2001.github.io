@@ -1,0 +1,107 @@
+ul {
+	display: inline-flex;
+}
+
+ul>li {
+	list-style-type: none;
+	display: inline-block;
+	color: white;
+	margin: 5px;
+	font-family: 'Source Code Pro', monospace;
+	letter-spacing: 0.5px;
+}
+
+.header img[src*="logo"] {
+	width: 200px;
+	margin-top: -20px;
+	margin-left: 30px;
+}
+
+ul {
+	position: fixed;
+	top: 1%;
+	right: 3%;
+}
+
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size: 4px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+a.animated-button:link:after, a.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+
+a.animated-button:link:hover, a.animated-button:visited:hover {
+	color: #FFF;
+	text-shadow: none;
+}
+
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+	height: 450%;
+}
+
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+a.animated-button.victoria-one {
+	border: 2px solid rgb(59, 173, 227);
+}
+
+a.animated-button.victoria-one:after {
+	background: -webkit-gradient( linear, left bottom, left top, from(rgb(28, 137, 159)), color-stop(rgb(63, 157, 117)), to(rgb(116, 184, 54)));
+	background: -o-linear-gradient( bottom, rgb(28, 137, 159), rgb(63, 157, 117), rgb(116, 184, 54));
+	background: linear-gradient( to top, rgb(28, 137, 159), rgb(63, 157, 117), rgb(116, 184, 54));
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+
+@media screen and (max-width: 819px) {
+	ul {
+		flex-direction: column;
+		position: absolute;
+		right: calc(50% - 186px / 2);
+	}
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/lightbox.min.css">  
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
+    <link rel="stylesheet" href="../css/nav.css"> 
+    <script src="../js/lightbox-plus-jquery.min.js"></script>
+	
+
+    <title>Galeria</title>
+
+</head>
+<body>
+        <div class="container">
+          <header class="header">
+            <img src="../images/logo.png">
+            <ul>
+              <li><a href="../html/index.html" class="btn btn-sm animated-button victoria-one">home</a></li>
+              <li><a href="../html/update.html" class="btn btn-sm animated-button victoria-one">Aktualności</a></li>
+              <li><a href="../html/gallery.html" class="btn btn-sm animated-button victoria-one">Galeria</a></li>
+              <li><a href="../html/terms_and_conditions.html" class="btn btn-bonus btn-sm animated-button victoria-one">regulamin</a></li>
+            </ul>
+          </header>
+          <legend>rok 2018/2019</legend>
+          <hr class="hr-text">
+          <section class="image_box">
+          <div class="gallery responsive">
+              <a href="../images/small-1 — kopia.JPG" data-lightbox="mygallery" alt="photo"><img src="../images/small-1.JPG" alt="photo"></a>
+              <a href="../images/small-2 — kopia.JPG" data-lightbox="mygallery" alt="photo"><img src="../images/small-2.JPG" alt="photo"></a>
+              <a href="../images/small-3 — kopia.JPG" data-lightbox="mygallery" alt="photo"><img src="../images/small-3.JPG" alt="photo"></a>
+              <a href="../images/small-4 — kopia.JPG" data-lightbox="mygallery" alt="photo"><img src="../images/small-4.JPG" alt="photo"></a>
+              <a href="../images/small-5 — kopia.JPG" data-lightbox="mygallery" alt="photo"><img src="../images/small-5.JPG" alt="photo"></a>
+              <a href="../images/small-6 — kopia.JPG" data-lightbox="mygallery" alt="photo"><img src="../images/small-6.JPG" alt="photo"></a>
+              <a href="../images/small-7 — kopia.JPG" data-lightbox="mygallery" alt="photo"><img src="../images/small-7.JPG" alt="photo"></a>
+              <a href="../images/small-8 — kopia.JPG" data-lightbox="mygallery" alt="photo"><img src="../images/small-8.JPG" alt="photo"></a>
+              <a href="../images/small-9 — kopia.JPG" data-lightbox="mygallery" alt="photo"><img src="../images/small-9.JPG" alt="photo"></a>
+              <a href="../images/small-1 — kopia.JPG" data-lightbox="mygallery" alt="photo"><img src="../images/small-1.JPG" alt="photo"></a>
+              <a href="../images/small-2 — kopia.JPG" data-lightbox="mygallery" alt="photo"><img src="../images/small-2.JPG" alt="photo"></a>
+              <a href="../images/small-3 — kopia.JPG" data-lightbox="mygallery" alt="photo"><img src="../images/small-3.JPG" alt="photo"></a>
+              <a href="../images/small-4 — kopia.JPG" data-lightbox="mygallery" alt="photo"><img src="../images/small-4.JPG" alt="photo"></a>
+              <a href="../images/small-5 — kopia.JPG" data-lightbox="mygallery" alt="photo"><img src="../images/small-5.JPG" alt="photo"></a>
+              <a href="../images/small-6 — kopia.JPG" data-lightbox="mygallery" alt="photo"><img src="../images/small-6.JPG" alt="photo"></a>
+          </div>
+        </section>
+
+        </div>   
+
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script> -->
+        <script>
+        $(document).ready(function(){
+        $('.responsive').slick({
+          rows: 3,
+          slidesToShow: 4,
+          slidesToScroll: 4, 
+          arrows: true,
+          swipeToSlide: true,
+          touchMove: true,
+          responsive: [
+            {
+              breakpoint: 1317,
+              settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+              }
+            },
+            {
+              breakpoint: 1073,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                centerMode: true
+              }
+            },
+          {
+            breakpoint: 910,
+            settings: {
+              slidesToShow: 2,
+                slidesToScroll: 2
+                // centerMode: true,
+                // centerPadding: '300px'
+            }
+          },
+          {
+            breakpoint: 828,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              mobileFirst: true
+              // centerMode: true
+            }
+          }
+          ]
+        });
+      });
+	
+        </script>   
+</body>
+</html>
+
+
+

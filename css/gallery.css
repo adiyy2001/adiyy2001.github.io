@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+img[alt*='photo'] {
+	width: 260px !important;
+	height: 150px;
+}
+
+.gallery {
+	margin: 10px 40px 10px 100px;
+	position: relative;
+	max-width: 1920px;
+	max-height: 1080px;
+}
+
+.gallery img {
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	padding: 15px;
+	width: 250px;
+}
+
+.gallery img:hover {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+legend {
+	margin-left: 100px;
+	color: white;
+	font-family: 'Source Code Pro', monospace;
+	text-indent: 12px;
+}
+
+hr {
+	height: 4px;
+	border: 0px;
+	border-radius: 5px;
+	background-image: -o-linear-gradient(left, rgb(28, 137, 159), rgb(63, 157, 117), rgb(116, 184, 54), transparent 50%);
+	background-image: -webkit-gradient(linear, left top, right top, from(rgb(28, 137, 159)), color-stop(rgb(63, 157, 117)), color-stop(rgb(116, 184, 54)), color-stop(50%, transparent));
+	background-image: linear-gradient(to right, rgb(28, 137, 159), rgb(63, 157, 117), rgb(116, 184, 54), transparent 50%);
+	margin-left: 115px;
+}
+
+.click {
+	margin: 10px;
+	font-size: 17px;
+	color: transparent;
+}
+
+.nav {
+	position: absolute;
+	bottom: -40px;
+	left: calc(50% - 100px);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.slick-next {
+	position: absolute;
+	right: 10%;
+	background: -o-linear-gradient( bottom, rgb(28, 137, 159), rgb(63, 157, 117), rgb(116, 184, 54));
+	background: -webkit-gradient( linear, left bottom, left top, from(rgb(28, 137, 159)), color-stop(rgb(63, 157, 117)), to(rgb(116, 184, 54)));
+	background: linear-gradient( to top, rgb(28, 137, 159), rgb(63, 157, 117), rgb(116, 184, 54));
+	border: none;
+	color: transparent;
+	width: 30px;
+	height: 30px;
+}
+
+.slick-prev {
+	position: absolute;
+	left: 4.2%;
+	top: 462px;
+	background: -o-linear-gradient( bottom, rgb(28, 137, 159), rgb(63, 157, 117), rgb(116, 184, 54));
+	background: -webkit-gradient( linear, left bottom, left top, from(rgb(28, 137, 159)), color-stop(rgb(63, 157, 117)), to(rgb(116, 184, 54)));
+	background: linear-gradient( to top, rgb(28, 137, 159), rgb(63, 157, 117), rgb(116, 184, 54));
+	border: none;
+	color: transparent;
+	width: 30px;
+	height: 30px;
+}
+
+.slick-next:before {
+	content: ">";
+	color: #fff;
+	font-size: 25px;
+}
+
+.slick-prev::before {
+	content: "<";
+	color: #fff;
+	font-size: 25px;
+}
+
+.image_box {
+	background-color: rgba(255, 255, 255, 0.4);
+	margin: 0px 100px 0px 100px;
+}
+
+@media only screen and (max-width: 828px) {
+	.image_box {
+		padding: 100px;
+	}
+}
